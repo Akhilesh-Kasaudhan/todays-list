@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Today-List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 id="main-title">Focus on <span>Today</span></h1>
+      <div class="container">
+        <span id="today">
+          <h2>
+            Today
+            <img
+              id="sun"
+              src="https://imgs.search.brave.com/GA3dPRVwcWVEZW7w4MvQSr0tCgZcJtwFbpfaIXPuroc/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAwLzYzLzc2LzEy/LzM2MF9GXzYzNzYx/MjMxX01zTUhPVHNi/UktlRmk2SjlpRTJk/V0JsVEtiZDMydDRG/LmpwZw"
+              alt="sun.."
+            />
+          </h2>
+        </span>
+
+        <p class="p-label">Raise the bar by completing your goals!</p>
+
+        <div class="progress-bar">
+          <div class="progress-value"><span>completed</span>
+            
+          </div>
+          <p class="error-label">Please set all the 3 goals!</p>
+        </div>
+
+        <div class="goal-container">
+          <div class="checkbox"><i class="fa-solid fa-check"></i></div>
+          <input id="first" type="text" placeholder="Add new goal..." />
+        </div>
+        <div class="goal-container">
+          <div class="checkbox"><i class="fa-solid fa-check"></i></div>
+          <input id="second" type="text" placeholder="Add new goal..." />
+        </div>
+        <div class="goal-container">
+          <div class="checkbox"><i class="fa-solid fa-check"></i></div>
+          <input id="third" type="text" placeholder="Add new goal..." />
+        </div>
+        <p class="quote">“Move one step ahead, today!”</p>
+
+        <p class="footer">Made with ❤️ by Akhilesh Kasaudhan</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

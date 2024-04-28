@@ -1,0 +1,166 @@
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+ 
+ *{ 
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: #cdfea4ac;
+}
+
+main{
+    height: 100vh;
+    max-width: 100vw;
+    padding: 1rem 3rem;
+}
+main #main-title{
+    font-size: 4rem;
+    line-height: 5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color:#2e5c08d4 ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#main-title span{
+ color: #61481c;
+}
+.container{
+   max-width: 660px;
+    margin-inline: auto;
+    padding:32px 42px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(44, 43, 43, 0.347);
+    /* position: relative; */
+}
+
+#sun{
+    vertical-align: middle;
+    width: 50px;
+}
+.container .p-label{
+    color: #858585;
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.progress-bar{
+    height: 30px;
+    background-color: #48A3001A;
+    border-radius: 15px;
+    margin:10px 0 40px;
+}
+.progress-value{
+    height: 100%;
+    background-color: #49a300;
+    border-radius: 15px;
+    width: 0;
+    color:#EEFFE0 ;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    /* display: none; */
+    /* opacity: 0; */
+    /* visibility: hidden; */
+    transition: width ease 0.5s;
+}
+.progress-value span{
+    padding:0.5rem 0.3rem;
+    min-width: max-content;
+
+}
+.error-label{
+    color:#FF5151 ;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+    display: none;
+}
+.show-error .error-label{
+    display: block;
+}
+.goal-container{
+    height: 5rem;
+    border: 1px solid rgb(214, 212, 212);
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding:0 20px;
+    margin-bottom: 20px;
+}
+.checkbox{
+    height:24px;
+    width: 24px;
+    border: 2px solid rgb(186, 184, 184);
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.1rem;
+    flex-shrink: 0;
+    cursor: pointer;
+   
+}
+.completed .checkbox{
+    background-color: #49a300;
+    border-color: #49a300;
+}
+.checkbox i{
+    display: none;
+}
+.completed i{
+    display: block;
+}
+.completed input{
+    color: #49a300;
+    text-decoration: line-through;
+}
+.goal-container input{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-family: inherit;
+    font-weight: 500;
+    flex-grow: 1;
+    padding-left: 20px;
+    align-self: stretch;
+
+}
+.goal-container input::placeholder{
+    color: #D9D9D9;
+}
+.quote{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+@media (max-width:440px){
+    main #main-title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .container{
+        padding: 20px;
+    }
+   .progress-bar{
+    height: 24px;
+   }
+   
+   .goal-container{
+    height: 3rem;
+    padding: 10px;
+    gap: 10px;
+   }
+  
+   .goal-container input{
+    font-size: 12px;
+   }
+   
+}
